@@ -44,3 +44,9 @@ xdebug.ini 里启用了 xdebug.remote_connect_back, 就会使用 http header 里
 
 1. 如果要在公网上测试，而公网服务器连接不上内网的开发机导致 Xdebug 失败的话，配置内网穿透（如 ssh 反向隧道）即可。可进入 php 容器，查看 /tmp/xdebug.log 解决 xdebug 连接问题；
 2. docker-compose.yml 里的 nginx 非必选项，是为了更真实的模拟生产环境。
+
+## 4
+* * *
+## 参考链接
+
+1. [https://xdebug.org/docs/all_settings](https://xdebug.org/docs/all_settings)
