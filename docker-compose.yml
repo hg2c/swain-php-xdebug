@@ -1,0 +1,15 @@
+version: '2'
+services:
+  php:
+    image: registry.cn-hangzhou.aliyuncs.com/hg2c/php:5-dev
+    volumes:
+      - ./src/:/var/www/html/
+      - ./etc/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+  nginx:
+    image: nginx
+    volumes:
+      - ./etc/nginx.conf/:/etc/nginx/conf.d/default.conf
+    links:
+      - php
+    ports:
+      - "5678:80"
