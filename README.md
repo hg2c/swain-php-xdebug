@@ -6,7 +6,7 @@ Xdebug 使用 C/S (客户端/服务器端) 模式来进行远程 php 调试。�
 * * *
 ## 试用
 
-1. 开启 Xdebug 服务端：点击 phpstorm Start Listening for PHP Debug Connections；
+1. 开启 Xdebug 服务端：点击 phpstorm 窗口右上角的按钮（Start Listening for PHP Debug Connections）；
 2. 设置服务端地址：打开文件 etc/nginx.conf, 将 X-Forwarded-For 后面的 IP 修改为 phpstrom 所在机器的 IP；
 3. 开启 Xdebug 客户端：docker-compose up；
 4. 在 phpstrom 里打开文件 src/index.php，加断点；
